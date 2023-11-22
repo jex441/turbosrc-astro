@@ -1,0 +1,184 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Turbo-Src</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    >
+  </script>
+    <script type="text/javascript" src="/script.js"></script>
+  </head>
+  <body>
+    <div class="bar"></div>
+    <nav class="nav">
+
+      <header class="header">
+        <a href="./index.html"><img src="./logoviolet.png" /></a>
+      </header>
+
+      <span>
+        <ul class="menu">
+            <li>
+              <a href="https://github.com/turbo-src/turbo-src">Install</a>
+            </li>
+            <li>
+              <a href="./faq.html">Learn</a>
+            </li>
+            <li>
+              <a href="./blog/articles.html">Blog</a>
+            </li>
+            <li>
+              <a href="https://github.com/turbo-src" target="_blank">
+              <img src="./github.png" />
+            </a>
+            </li>
+        </ul>
+      </span>
+    </nav>
+
+    <!-- Content -->
+    <section class="landing">
+
+      <!-- Intro Text-->
+      <div class="landingText">
+        <div class="headline">Get VotePower on projects you contribute to</div>
+        <div class="subHeader">— or —</div>
+        <div class="headline">Generate VotePower on open source projects you own</div>
+        <div class="introTextWrapper">
+        <div class="introText">
+          <span>Cross Platform&nbsp;</span>works on Github and elsewhere
+        </div>
+        <div class="introText">
+          <span>Maintainers -&nbsp;</span>reward your sponsors
+          or incentivize your contributors
+          and automate development.
+        </div>
+        <div class="introText">
+          <span>Contributors -&nbsp;</span>get rewarded.
+        </div>
+      </div>
+        <div class="actions">
+          <a href="https://github.com/turbo-src/turbo-src" class="getStartedButton">Get Started</a>
+          <a href="./faq.html" class="learnMore">Learn More</a>
+        </div>
+      </div>
+
+      <!-- Video Carousel -->
+      <div class="introVideo">
+        <nav><span>Turbosrc Browser Extension</span></nav>
+        <div class="carouselViewport">
+          <span id="slide1" class="slide">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/R28BDT-0v2Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="carouselSnapper"></div>
+          </span>
+        </div>
+
+        <!-- <div class="videoButtons">
+          <a href="#slide1">
+            <button type="button" class="bullet" name="part1"></button>
+          </a>
+
+          <a href="#slide2">
+            <button type="button" class="bullet"></button>
+          </a>
+
+          <a href="#slide3">
+            <button type="button" class="bullet"></button>
+          </a>
+
+        </div>
+        <div class="labels">
+          <span>Tokenize</span>
+          <span>Vote</span>
+          <span>Get VotePower</span>
+        </div>
+      </div> -->
+    </section>
+
+<!-- VotePower -->
+<div class="votePowerHeadline"><h1>Become a <span class="secondary">Turbosrc</span> Engineer</h1><h2>Simple. Powerful.</h2></div>
+
+<section class="votePower">
+  <div>
+  <section>
+    <h1>Contributors</h1>
+<p><span class="secondary">VotePower</span> gives you a vote on what code goes
+  in or out of an open source project that’s on
+  Turbosrc - merge or close pull requests.
+  VotePower can vary user to user.</p><p>
+  Each project has separate VotePower that only
+  works on their pull requests respectively.</p><p>
+  VotePower is yours forever once you get it. You
+  can even redistribute it to others.</p>
+</section>
+  <a href="https://github.com/turbo-src/extension">Get VotePower</a>
+</div>
+
+  <div>
+    <section>
+      <span>
+    <h1>Maintainers</h1>
+  </span>
+  <p>
+    Put your Github project on <span class="primary">Turbosrc</span> and issue
+    VotePower. Transfer as much or as little VotePower
+to your contributors or stakeholders as you want.</p><p>
+Democratize decisions on pull request merges or
+keep VotePower concentrated between yourself and
+core contributors.</p><p>
+Scale and automate development by driving code
+contribution and merges collectively at your
+comfort level.
+  </p>
+</section>
+  <a href="https://github.com/turbo-src/extension">Create VotePower</a>
+</div>
+</section>
+
+<!-- Git Info -->
+<section class="git">
+  <div><h1><span class="primary">Turbosrc</span> works on the entire Git line of code hosts</h1></div>
+  <div><h1>Available now for Github</h1></div>
+  <div class="gitButton"><span><a href="https://github.com/turbo-src/extension">Web extension</a></span></div>
+  <div><h1>It uses a cross-platform identifier for pull requests</h1></div>
+  <div class="gitButton"><span><a href="./faq.html">Learn More</a></span></div>
+  <div><h3>Available soon on git-cli, Gitlab and Codeberg projects.</h3>
+  </div>
+</section>
+
+
+<!-- Waitlist -->
+<section class="waitlist" id="alpha">
+  <div>
+    <h1>Join alpha launch</h1>
+  </div>
+  <div><h2>Create <span class="secondary">VotePower</span> on your Github projects</h2></div>
+  <div>
+    <form id="email-list">
+    <input id="email-input" type="email" name="user_email" placeholder="enter your email address"></input></div>
+  <button type="submit" value="Send" class="waitlistButton">Submit</button>
+  </form>
+</div>
+  <div class="web3">
+    <h2>
+    Build new worlds.
+    </h2>
+</div>
+</section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      Copyright © 2022 Turbosrc contributors</footer>
+  </body>
+</html>
