@@ -4,9 +4,9 @@ description: 'David Szigeti'
 pubDate: 'October 26, 2022'
 heroImage: '/blog-placeholder-4.jpg'
 ---
-    ![Turbosrc logo](/logoviolet.png)
+![Turbosrc logo](/logoviolet.png)
 
-In a previous [blog post](https://www.reibase.rs/blog/exploitation-of-contributors.html), we outlined a vision for rewarding contributors, self-sustaining open source projects, and improving security.
+In a previous [blog post](/blog/first-post/), we outlined a vision for rewarding contributors, self-sustaining open source projects, and improving security.
 
 ## Alpha Launch
 We are pleased to announce the alpha release of [Turbosrc](https://www.turbosrc.org) (pronounced “turbo source”) – free and open source software that empowers contributors as stakeholders. Here is the source code on [Github](https://github.com/turbo-src). You can launch your own private instances if you choose. We still have a lot of work to polish for beta launch.
