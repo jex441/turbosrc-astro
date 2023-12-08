@@ -3,8 +3,8 @@ title: 'Exploitation of Contributors: Enough Already'
 description: David Szigeti'
 pubDate: 'October 24 2022'
 heroImage: '/blog-placeholder-3.jpg'
+subText: 'We are founded on the belief that open source contributors deserve better.'
 ---
-We are founded on the belief that open source contributors deserve better.
 
 **Open source is unfair.** Many maintainers are burnt out, their repos overflowing with issues to resolve and pull requests to review. They don’t get enough code contributions because it’s hard to incentivize the talent they need. And often their employers fail to accommodate their open source work. On the other hand, some contributors put a lot of energy and dedication into open source, but need financial support to keep going. We believe that maintainers and contributors deserve better. We’re adding an open source system on top of git and code hosts that will accomplish this. Please listen out for an announcement in the coming days.
 
