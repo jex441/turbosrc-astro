@@ -1,6 +1,6 @@
 ---
 title: 'Exploitation of Contributors: Enough Already'
-description: David Szigeti'
+description: David Szigeti
 pubDate: 'October 24 2022'
 heroImage: '/blog-placeholder-3.jpg'
 subText: 'We are founded on the belief that open source contributors deserve better.'

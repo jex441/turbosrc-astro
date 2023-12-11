@@ -29,11 +29,12 @@ const { title, description, pubDate, updatedDate, heroImage, subText } = Astro.p
         box-shadow: var(--box-shadow);
       }
       .prose {
-        width: 720px;
+        width: 900px;
         max-width: calc(100% - 2em);
         margin: auto;
         padding: 1em;
         color: rgb(var(--gray-dark));
+		font-family: 'Poppins', sans-serif;
       }
       .title {
         margin-bottom: 1em;
@@ -145,6 +146,33 @@ const { title, description, pubDate, updatedDate, heroImage, subText } = Astro.p
           height: auto;
         }
       }
+
+	  .blogSubhead {
+    width: 100%;
+    margin: .5rem 0 1rem 0;
+    font-size: 26px;
+    line-height: 30px;
+    overflow: visible;
+    font-style: italic;
+	font-family: 'Poppins', sans-serif;
+}
+
+.blogSubhead a {
+    color: rgb(116, 116, 116);
+    line-height: 30px;
+    font-size: inherit;
+    text-decoration: none;
+}
+
+.blogSubhead a:hover {
+    color: #000;
+}
+.description-line{
+	display: flex;
+    align-items: center;
+    object-fit: contain;
+    font-size: 21px;
+}
     </style>
   </head>
 
@@ -155,7 +183,6 @@ const { title, description, pubDate, updatedDate, heroImage, subText } = Astro.p
         <div class="prose">
           <div class="title">
             <div class="date">
-              <FormattedDate date={pubDate} />
               {
                 updatedDate && (
                   <div class="last-updated-on">
@@ -165,8 +192,8 @@ const { title, description, pubDate, updatedDate, heroImage, subText } = Astro.p
               }
             </div>
             <header class="blogHeadline">{title}</header>
-            <hr />
-			<p>{subText}</p>
+			<p class="description-line">{description} -	‎ <FormattedDate date={pubDate} /></p>
+			<p class="blogSubhead">{subText}</p>
           </div>
           <slot />
         </div>
