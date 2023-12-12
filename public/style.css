@@ -33,7 +33,7 @@
  }
 
  .bar {
-     height: .618rem;
+     height: 7px;
      width: 100vw;
      display: block;
      background: var(--primary);
