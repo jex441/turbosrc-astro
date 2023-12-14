@@ -3,7 +3,7 @@ title: 'Announcing Turbosrc: empowering contributors'
 description: 'David Szigeti'
 pubDate: 'October 26, 2022'
 heroImage: '/blog-placeholder-4.jpg'
-subText: ''
+subText: 'In a previous blog post, we outlined a vision for rewarding contributors, self-sustaining open source projects, and improving security.'
 ---
 ![Turbosrc logo](/logoviolet.png)
 
