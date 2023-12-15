@@ -1,3 +1,10 @@
+---
+
+import Header from '../components/Header.astro';
+
+---
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -16,32 +23,7 @@
     <script type="text/javascript" src="/script.js"></script>
   </head>
   <body>
-    <div class="bar" id="top"></div>
-    <nav class="nav">
-
-      <header class="header">
-        <a href="/"><img src="/logoviolet.png" /></a>
-      </header>
-
-      <span>
-        <ul class="menu">
-            <li>
-              <a href="https://github.com/turbo-src/turbo-src">Install</a>
-            </li>
-            <li>
-              <a href="/learn/">Learn</a>
-            </li>
-            <li>
-              <a href="/blog">Blog</a>
-            </li>
-            <li>
-              <a href="https://github.com/turbo-src" target="_blank">
-              <img src="/github.png" />
-            </a>
-            </li>
-        </ul>
-      </span>
-    </nav>
+    <Header/>
 
 <!-- Header -->
 <section class="learnNav">

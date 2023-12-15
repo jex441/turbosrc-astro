@@ -2,38 +2,8 @@
 import HeaderLink from './HeaderLink.astro';
 import { SITE_TITLE } from '../consts';
 ---
-
-<header>
-	<div class="bar"></div>
-
-	<nav class="nav">
-		
-		<header class="header">
-		  <a href="/index/"><img src="/logoviolet.png" /></a>
-		</header>
-  
-		<span>
-		  <ul class="menu">
-			  <li>
-				<a href="https://github.com/turbo-src/turbo-src">Install</a>
-			  </li>
-			  <li>
-				<a href="/learn/">Learn</a>
-			  </li>
-			  <li>
-				<a href="/blog/">Blog</a>
-			  </li>
-			  <li>
-				<a href="https://github.com/turbo-src" target="_blank">
-				<img src="/github.png" />
-			  </a>
-			  </li>
-		  </ul>
-		</span>
-	  </nav>
-</header>
-<style> 
-:root {
+<style is:global>
+	:root {
 	--primary: #5000ca;
 	--secondary: #E7008A;
 	--lightBlue: #38bdf8;
@@ -49,6 +19,9 @@ import { SITE_TITLE } from '../consts';
 	.header img {
     	width: 200px;
  	}
+	a > .gh-icon {
+		width:24px;
+	}
 	h2 {
 		margin: 0;
 		font-size: 1em;
@@ -129,3 +102,31 @@ import { SITE_TITLE } from '../consts';
      margin: 0rem 0rem 0rem 3rem;
  }
 </style>
+<header>
+	<div class="bar"></div>
+
+	<nav class="nav">
+		<header class="header">
+		  <a href="/"><img src="/logoviolet.png" /></a>
+		</header>
+		<span>
+		  <ul class="menu">
+			  <li>
+				<a href="https://github.com/turbo-src/turbo-src">Install</a>
+			  </li>
+			  <li>
+				<a href="/learn/">Learn</a>
+			  </li>
+			  <li>
+				<a href="/blog/">Blog</a>
+			  </li>
+			  <li>
+				<a href="https://github.com/turbo-src" target="_blank">
+				<img class="gh-icon" src="/github.png" />
+			  </a>
+			  </li>
+		  </ul>
+		</span>
+	  </nav>
+</header>
+
