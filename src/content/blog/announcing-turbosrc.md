@@ -21,9 +21,11 @@ The idea is simple. A maintainer gets a supply of 1 million VotePower for their 
 - Turbosrc has unique IDs for pull requests under the hood (cross-platform)
 
 ![Login with Github](/loginwithgithub.png)
+
 *Login with Github*
 
 ![Vote directly on pull requests](/votebuttons.png)
+
 *Vote directly on pull requests*
 
 Alpha access is available to lobste.rs users here on [turbosrc.org](https://turbosrc.org/#alpha).
