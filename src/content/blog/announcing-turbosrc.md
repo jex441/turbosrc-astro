@@ -7,7 +7,7 @@ subText: 'In a previous blog post, we outlined a vision for rewarding contributo
 ---
 ![Turbosrc logo](/logoviolet.png)
 
-In a previous [blog post](/blog/first-post/), we outlined a vision for rewarding contributors, self-sustaining open source projects, and improving security.
+In a previous [blog post](/blog/exploitation-of-contributors/), we outlined a vision for rewarding contributors, self-sustaining open source projects, and improving security.
 
 ## Alpha Launch
 We are pleased to announce the alpha release of [Turbosrc](https://www.turbosrc.org) (pronounced “turbo source”) – free and open source software that empowers contributors as stakeholders. Here is the source code on [Github](https://github.com/turbo-src). You can launch your own private instances if you choose. We still have a lot of work to polish for beta launch.
@@ -20,6 +20,7 @@ The idea is simple. A maintainer gets a supply of 1 million VotePower for their 
 - Turbosrc is not affiliated with Github - Turbosrc has a web extension
 - Turbosrc has unique IDs for pull requests under the hood (cross-platform)
 
+
 ![Login with Github](/loginwithgithub.png)
 
 *Login with Github*
@@ -27,6 +28,8 @@ The idea is simple. A maintainer gets a supply of 1 million VotePower for their 
 ![Vote directly on pull requests](/votebuttons.png)
 
 *Vote directly on pull requests*
+
+We have made a cloud hosted version available to alpha users. It comes with a web extension that works for Github projects - incentivizing developers, democratizing code development, and lowering the day-to-day burden of maintainers in ways once unimagined. More code hosts other than Github are to come, including a stand-alone web and cli app.
 
 Alpha access is available to lobste.rs users here on [turbosrc.org](https://turbosrc.org/#alpha).
 
@@ -47,4 +50,9 @@ You can also give sponsors (who’d appreciate it) of your project some VotePowe
 
 Most of the benefits of Turbosrc, we believe, can be achieved without Web3. One day, however, for maintainers that want that, sponsorship costs could be capitalized costs instead. Something that retains value via VotePower-Web3.
 
-Turbosrc is a hosted service out-of-the-box. It’s not blockchain. However, others can choose to fork Turbosrc and ‘swap out’ VotePower for Web3 VotePower implementation. Turbosrc is modular by design and it’s fully open-source, so anyone is free to do this - just like anyone can use Linux for
+Turbosrc is a hosted service out-of-the-box. It’s not blockchain. However, others can choose to fork Turbosrc and ‘swap out’ VotePower for Web3 VotePower implementation. Turbosrc is modular by design and it’s fully open-source, so anyone is free to do this - just like anyone can use Linux for for whatever they want. Again, Turbosrc stands on its own without Web3.
+
+## Contributing to Turbosrc itself
+We have a lot of room for improvement. We haven’t tightened up the code base yet. We’re a small team that bootstrapped this. We don’t fully-utilize the power of our graphQL api, which ties together all the Turbosrc subservices. We need to work towards ci/cd. There are lots of opportunities for those interested at all skill levels.
+
+
